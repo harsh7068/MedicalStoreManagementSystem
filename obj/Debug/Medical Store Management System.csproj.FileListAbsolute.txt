@@ -12,3 +12,18 @@ C:\Users\HERO\source\repos\Medical Store Management System\obj\Debug\Medical Sto
 C:\Users\HERO\source\repos\Medical Store Management System\obj\Debug\Medical Store Management System.exe
 C:\Users\HERO\source\repos\Medical Store Management System\obj\Debug\Medical Store Management System.pdb
 C:\Users\HERO\source\repos\Medical Store Management System\obj\Debug\Medical_Store_Management_System.Administrator.resources
+C:\Users\HERO\Source\Repos\MedicalStoreManagementSystem\bin\Debug\Medical Store Management System.exe.config
+C:\Users\HERO\Source\Repos\MedicalStoreManagementSystem\bin\Debug\Medical Store Management System.exe
+C:\Users\HERO\Source\Repos\MedicalStoreManagementSystem\bin\Debug\Medical Store Management System.pdb
+C:\Users\HERO\Source\Repos\MedicalStoreManagementSystem\bin\Debug\Guna.UI2.dll
+C:\Users\HERO\Source\Repos\MedicalStoreManagementSystem\obj\Debug\Medical Store Management System.csproj.AssemblyReference.cache
+C:\Users\HERO\Source\Repos\MedicalStoreManagementSystem\obj\Debug\Medical Store Management System.csproj.SuggestedBindingRedirects.cache
+C:\Users\HERO\Source\Repos\MedicalStoreManagementSystem\obj\Debug\Medical_Store_Management_System.Administrator.resources
+C:\Users\HERO\Source\Repos\MedicalStoreManagementSystem\obj\Debug\Medical_Store_Management_System.AdministratorUC.UC_Dashboard.resources
+C:\Users\HERO\Source\Repos\MedicalStoreManagementSystem\obj\Debug\Medical_Store_Management_System.Form1.resources
+C:\Users\HERO\Source\Repos\MedicalStoreManagementSystem\obj\Debug\Medical_Store_Management_System.Properties.Resources.resources
+C:\Users\HERO\Source\Repos\MedicalStoreManagementSystem\obj\Debug\Medical Store Management System.csproj.GenerateResource.cache
+C:\Users\HERO\Source\Repos\MedicalStoreManagementSystem\obj\Debug\Medical Store Management System.csproj.CoreCompileInputs.cache
+C:\Users\HERO\Source\Repos\MedicalStoreManagementSystem\obj\Debug\Medical Store Management System.csproj.CopyComplete
+C:\Users\HERO\Source\Repos\MedicalStoreManagementSystem\obj\Debug\Medical Store Management System.exe
+C:\Users\HERO\Source\Repos\MedicalStoreManagementSystem\obj\Debug\Medical Store Management System.pdb

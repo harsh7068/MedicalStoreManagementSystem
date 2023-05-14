@@ -19,7 +19,8 @@ namespace Medical_Store_Management_System
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            uC_Dashboard1.Visible = true;
+            uC_Dashboard1.BringToFront();
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
@@ -27,6 +28,17 @@ namespace Medical_Store_Management_System
             Form1 fm = new Form1();
             fm.Show();
             this.Hide();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Administrator_Load(object sender, EventArgs e)
+        {
+            uC_Dashboard1.Visible = false;
+            btnDashboard.PerformClick();
         }
     }
 }
