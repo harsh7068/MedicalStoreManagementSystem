@@ -57,7 +57,7 @@ namespace Medical_Store_Management_System
                     String role = ds.Tables[0].Rows[0][1].ToString();
                     if(role == "Administrator")
                     {
-                        Administrator admin = new Administrator();
+                        Administrator admin = new Administrator(txtUserName.Text);
                         admin.Show();
                         this.Hide();
                     }

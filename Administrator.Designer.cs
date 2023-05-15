@@ -30,19 +30,21 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.LoggedInUserName = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.uC_AddUser1 = new Medical_Store_Management_System.AdministratorUC.UC_AddUser();
             this.uC_Dashboard1 = new Medical_Store_Management_System.AdministratorUC.UC_Dashboard();
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnAddUser = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnViewUser = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.uC_AddUser1 = new Medical_Store_Management_System.AdministratorUC.UC_AddUser();
+            this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.uC_ViewUser1 = new Medical_Store_Management_System.AdministratorUC.UC_ViewUser();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -51,11 +53,11 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.LoggedInUserName);
             this.panel1.Controls.Add(this.btnLogout);
             this.panel1.Controls.Add(this.btnAddUser);
             this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.btnViewUser);
             this.panel1.Controls.Add(this.btnDashboard);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -64,16 +66,16 @@
             this.panel1.Size = new System.Drawing.Size(275, 771);
             this.panel1.TabIndex = 0;
             // 
-            // label2
+            // LoggedInUserName
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Yellow;
-            this.label2.Location = new System.Drawing.Point(83, 651);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(113, 29);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Username";
+            this.LoggedInUserName.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoggedInUserName.ForeColor = System.Drawing.Color.Yellow;
+            this.LoggedInUserName.Location = new System.Drawing.Point(0, 649);
+            this.LoggedInUserName.Name = "LoggedInUserName";
+            this.LoggedInUserName.Size = new System.Drawing.Size(275, 29);
+            this.LoggedInUserName.TabIndex = 0;
+            this.LoggedInUserName.Text = "Username";
+            this.LoggedInUserName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
             // 
@@ -88,6 +90,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.uC_ViewUser1);
             this.panel2.Controls.Add(this.uC_AddUser1);
             this.panel2.Controls.Add(this.uC_Dashboard1);
             this.panel2.Location = new System.Drawing.Point(276, 0);
@@ -99,6 +102,18 @@
             // guna2Elipse1
             // 
             this.guna2Elipse1.TargetControl = this.panel2;
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.TargetControl = this.panel2;
+            // 
+            // uC_AddUser1
+            // 
+            this.uC_AddUser1.BackColor = System.Drawing.Color.White;
+            this.uC_AddUser1.Location = new System.Drawing.Point(-3, 0);
+            this.uC_AddUser1.Name = "uC_AddUser1";
+            this.uC_AddUser1.Size = new System.Drawing.Size(1105, 771);
+            this.uC_AddUser1.TabIndex = 1;
             // 
             // uC_Dashboard1
             // 
@@ -155,20 +170,21 @@
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button3.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnViewUser
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = global::Medical_Store_Management_System.Properties.Resources.view_64px;
-            this.button2.Location = new System.Drawing.Point(48, 400);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(194, 47);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "View User";
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnViewUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnViewUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnViewUser.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewUser.ForeColor = System.Drawing.Color.White;
+            this.btnViewUser.Image = global::Medical_Store_Management_System.Properties.Resources.view_64px;
+            this.btnViewUser.Location = new System.Drawing.Point(48, 400);
+            this.btnViewUser.Name = "btnViewUser";
+            this.btnViewUser.Size = new System.Drawing.Size(194, 47);
+            this.btnViewUser.TabIndex = 3;
+            this.btnViewUser.Text = "View User";
+            this.btnViewUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnViewUser.UseVisualStyleBackColor = false;
+            this.btnViewUser.Click += new System.EventHandler(this.btnViewUser_Click);
             // 
             // btnDashboard
             // 
@@ -197,24 +213,24 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // guna2Elipse2
+            // guna2Elipse3
             // 
-            this.guna2Elipse2.TargetControl = this.panel2;
+            this.guna2Elipse3.TargetControl = this.panel2;
             // 
-            // uC_AddUser1
+            // uC_ViewUser1
             // 
-            this.uC_AddUser1.BackColor = System.Drawing.Color.White;
-            this.uC_AddUser1.Location = new System.Drawing.Point(-3, 0);
-            this.uC_AddUser1.Name = "uC_AddUser1";
-            this.uC_AddUser1.Size = new System.Drawing.Size(1105, 771);
-            this.uC_AddUser1.TabIndex = 1;
+            this.uC_ViewUser1.BackColor = System.Drawing.Color.White;
+            this.uC_ViewUser1.Location = new System.Drawing.Point(-3, 0);
+            this.uC_ViewUser1.Name = "uC_ViewUser1";
+            this.uC_ViewUser1.Size = new System.Drawing.Size(1105, 771);
+            this.uC_ViewUser1.TabIndex = 2;
             // 
             // Administrator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1380, 768);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -237,14 +253,16 @@
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Button btnAddUser;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnViewUser;
         private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label LoggedInUserName;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private AdministratorUC.UC_Dashboard uC_Dashboard1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
         private AdministratorUC.UC_AddUser uC_AddUser1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
+        private AdministratorUC.UC_ViewUser uC_ViewUser1;
     }
 }

@@ -42,6 +42,7 @@ namespace Medical_Store_Management_System.AdministratorUC
             {
                 query = "insert into users(userRole, name, dob, mobile, email, username, pass)values('" + role + "', '" + name + "', '" + dob + "', " + mobile + ", '" + email + "', '" + username + "', '" + password + "')";
                 fn.setData(query, "User Inserted!!!");
+                clearAll();
             }
             catch(Exception)
             {
