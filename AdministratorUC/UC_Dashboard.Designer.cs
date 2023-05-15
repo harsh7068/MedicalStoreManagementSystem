@@ -82,7 +82,7 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(46, 88);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(308, 638);
+            this.panel1.Size = new System.Drawing.Size(308, 615);
             this.panel1.TabIndex = 1;
             // 
             // lblAdmin
@@ -148,7 +148,7 @@
             this.panel2.Controls.Add(this.label4);
             this.panel2.Location = new System.Drawing.Point(722, 88);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(308, 638);
+            this.panel2.Size = new System.Drawing.Size(308, 615);
             this.panel2.TabIndex = 2;
             // 
             // label13
@@ -214,7 +214,7 @@
             this.panel3.Controls.Add(this.label3);
             this.panel3.Location = new System.Drawing.Point(383, 88);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(308, 638);
+            this.panel3.Size = new System.Drawing.Size(308, 615);
             this.panel3.TabIndex = 2;
             // 
             // lblPharma

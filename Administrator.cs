@@ -23,6 +23,7 @@ namespace Medical_Store_Management_System
             LoggedInUserName.Text = username;
             user = username;
             uC_ViewUser1.ID = ID;
+            uC_Profile1.ID = ID;
         }
 
         public string ID
@@ -54,6 +55,7 @@ namespace Medical_Store_Management_System
             uC_AddUser1.Visible = false;
             btnDashboard.PerformClick();
             uC_ViewUser1.Visible = false;
+            uC_Profile1.Visible = false;
         }
 
         private void btnAddUser_Click(object sender, EventArgs e)
@@ -66,6 +68,12 @@ namespace Medical_Store_Management_System
         {
             uC_ViewUser1.Visible = true;
             uC_ViewUser1.BringToFront();
+        }
+
+        private void btnProfile_Click(object sender, EventArgs e)
+        {
+            uC_Profile1.Visible = true;
+            uC_Profile1.BringToFront();
         }
     }
 }
