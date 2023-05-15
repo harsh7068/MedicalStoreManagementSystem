@@ -134,7 +134,7 @@ They can add and delete other admin users,
 and can approve or deny edits made by user.
 </value>
   </data>
-  <data name="label11.Text" xml:space="preserve">
+  <data name="label15.Text" xml:space="preserve">
     <value>Admin is the role with the highest level of
 access.
 
@@ -148,7 +148,7 @@ They can add and delete other admin users,
 and can approve or deny edits made by user.
 </value>
   </data>
-  <data name="label15.Text" xml:space="preserve">
+  <data name="label11.Text" xml:space="preserve">
     <value>Admin is the role with the highest level of
 access.
 
