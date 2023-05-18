@@ -30,24 +30,26 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.uC_P_Dashboard1 = new Medical_Store_Management_System.PharmacistUC.UC_P_Dashboard();
             this.btnLogout = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnViewMedicine = new System.Windows.Forms.Button();
             this.btnAddMedicine = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.uC_P_AddMedicine1 = new Medical_Store_Management_System.PharmacistUC.UC_P_AddMedicine();
+            this.uC_P_Dashboard1 = new Medical_Store_Management_System.PharmacistUC.UC_P_Dashboard();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.uC_P_ViewMedicine1 = new Medical_Store_Management_System.PharmacistUC.UC_P_ViewMedicine();
             this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -57,7 +59,7 @@
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.btnViewMedicine);
             this.panel1.Controls.Add(this.btnAddMedicine);
             this.panel1.Controls.Add(this.btnDashboard);
             this.panel1.Controls.Add(this.label1);
@@ -67,45 +69,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(275, 780);
             this.panel1.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(52, 198);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(165, 39);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Pharmacist";
-            // 
-            // panel2
-            // 
-            this.panel2.Location = new System.Drawing.Point(276, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1093, 780);
-            this.panel2.TabIndex = 1;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.uC_P_AddMedicine1);
-            this.panel3.Controls.Add(this.uC_P_Dashboard1);
-            this.panel3.Location = new System.Drawing.Point(275, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1094, 780);
-            this.panel3.TabIndex = 2;
-            // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.TargetControl = this.panel3;
-            // 
-            // uC_P_Dashboard1
-            // 
-            this.uC_P_Dashboard1.BackColor = System.Drawing.Color.White;
-            this.uC_P_Dashboard1.Location = new System.Drawing.Point(-1, 2);
-            this.uC_P_Dashboard1.Name = "uC_P_Dashboard1";
-            this.uC_P_Dashboard1.Size = new System.Drawing.Size(1094, 780);
-            this.uC_P_Dashboard1.TabIndex = 0;
             // 
             // btnLogout
             // 
@@ -172,21 +135,22 @@
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button3.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnViewMedicine
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = global::Medical_Store_Management_System.Properties.Resources.view_64px;
-            this.button2.Location = new System.Drawing.Point(40, 417);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(194, 47);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "View Medicine";
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnViewMedicine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnViewMedicine.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnViewMedicine.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnViewMedicine.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewMedicine.ForeColor = System.Drawing.Color.White;
+            this.btnViewMedicine.Image = global::Medical_Store_Management_System.Properties.Resources.view_64px;
+            this.btnViewMedicine.Location = new System.Drawing.Point(40, 417);
+            this.btnViewMedicine.Name = "btnViewMedicine";
+            this.btnViewMedicine.Size = new System.Drawing.Size(194, 47);
+            this.btnViewMedicine.TabIndex = 7;
+            this.btnViewMedicine.Text = "View Medicine";
+            this.btnViewMedicine.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnViewMedicine.UseVisualStyleBackColor = false;
+            this.btnViewMedicine.Click += new System.EventHandler(this.btnViewMedicine_Click);
             // 
             // btnAddMedicine
             // 
@@ -222,6 +186,17 @@
             this.btnDashboard.UseVisualStyleBackColor = false;
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(52, 198);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(165, 39);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Pharmacist";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Medical_Store_Management_System.Properties.Resources.pharmacy_100px1;
@@ -232,9 +207,22 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // guna2Elipse2
+            // panel2
             // 
-            this.guna2Elipse2.TargetControl = this.panel3;
+            this.panel2.Location = new System.Drawing.Point(276, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1093, 780);
+            this.panel2.TabIndex = 1;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.uC_P_ViewMedicine1);
+            this.panel3.Controls.Add(this.uC_P_AddMedicine1);
+            this.panel3.Controls.Add(this.uC_P_Dashboard1);
+            this.panel3.Location = new System.Drawing.Point(275, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1094, 780);
+            this.panel3.TabIndex = 2;
             // 
             // uC_P_AddMedicine1
             // 
@@ -243,6 +231,36 @@
             this.uC_P_AddMedicine1.Name = "uC_P_AddMedicine1";
             this.uC_P_AddMedicine1.Size = new System.Drawing.Size(1094, 780);
             this.uC_P_AddMedicine1.TabIndex = 1;
+            // 
+            // uC_P_Dashboard1
+            // 
+            this.uC_P_Dashboard1.BackColor = System.Drawing.Color.White;
+            this.uC_P_Dashboard1.Location = new System.Drawing.Point(-1, 2);
+            this.uC_P_Dashboard1.Name = "uC_P_Dashboard1";
+            this.uC_P_Dashboard1.Size = new System.Drawing.Size(1094, 780);
+            this.uC_P_Dashboard1.TabIndex = 0;
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.TargetControl = this.panel3;
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.TargetControl = this.panel3;
+            // 
+            // guna2Elipse3
+            // 
+            this.guna2Elipse3.TargetControl = this.panel3;
+            // 
+            // uC_P_ViewMedicine1
+            // 
+            this.uC_P_ViewMedicine1.BackColor = System.Drawing.Color.White;
+            this.uC_P_ViewMedicine1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uC_P_ViewMedicine1.Location = new System.Drawing.Point(0, 1);
+            this.uC_P_ViewMedicine1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uC_P_ViewMedicine1.Name = "uC_P_ViewMedicine1";
+            this.uC_P_ViewMedicine1.Size = new System.Drawing.Size(1641, 1200);
+            this.uC_P_ViewMedicine1.TabIndex = 2;
             // 
             // Pharmacist
             // 
@@ -259,8 +277,8 @@
             this.Load += new System.EventHandler(this.Pharmacist_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -272,7 +290,7 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnViewMedicine;
         private System.Windows.Forms.Button btnAddMedicine;
         private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.Label label1;
@@ -283,5 +301,7 @@
         private PharmacistUC.UC_P_Dashboard uC_P_Dashboard1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
         private PharmacistUC.UC_P_AddMedicine uC_P_AddMedicine1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
+        private PharmacistUC.UC_P_ViewMedicine uC_P_ViewMedicine1;
     }
 }

@@ -53,7 +53,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(22, 24);
+            this.label1.Location = new System.Drawing.Point(61, 69);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(215, 36);
             this.label1.TabIndex = 2;
@@ -176,6 +176,7 @@
             // 
             // txtMedMfg
             // 
+            this.txtMedMfg.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.txtMedMfg.Location = new System.Drawing.Point(162, 494);
             this.txtMedMfg.Name = "txtMedMfg";
             this.txtMedMfg.Size = new System.Drawing.Size(340, 20);
@@ -183,6 +184,7 @@
             // 
             // txtMedExp
             // 
+            this.txtMedExp.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.txtMedExp.Location = new System.Drawing.Point(564, 246);
             this.txtMedExp.Name = "txtMedExp";
             this.txtMedExp.Size = new System.Drawing.Size(340, 20);

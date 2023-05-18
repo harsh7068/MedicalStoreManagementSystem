@@ -29,12 +29,12 @@ namespace Medical_Store_Management_System.PharmacistUC
 
         public void loadChart()
         {
-            query = "select count(mname) from medicine where eDate >= convert(varchar(100),getdate(),106)";
+            query = "select count(mname) from medicine where eDate >= getdate()";
             ds = fn.getData(query);
             count = Int64.Parse(ds.Tables[0].Rows[0][0].ToString());
             this.chart1.Series["Valid Medicines"].Points.AddXY("Medicine Validity Count", count);
 
-            query = "select count(mname) from medicine where eDate <= convert(varchar(100),getdate(),106)";
+            query = "select count(mname) from medicine where eDate <= getdate()";
             ds = fn.getData(query);
             count = Int64.Parse(ds.Tables[0].Rows[0][0].ToString());
             this.chart1.Series["Expired Medicines"].Points.AddXY("Medicine Validity Count", count);
