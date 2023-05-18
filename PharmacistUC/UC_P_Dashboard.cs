@@ -12,6 +12,11 @@ namespace Medical_Store_Management_System.PharmacistUC
 {
     public partial class UC_P_Dashboard : UserControl
     {
+        function fn = new function();
+        String query;
+        DataSet ds;
+        Int64 count;
+
         public UC_P_Dashboard()
         {
             InitializeComponent();
@@ -19,7 +24,27 @@ namespace Medical_Store_Management_System.PharmacistUC
 
         private void UC_P_Dashboard_Load(object sender, EventArgs e)
         {
-            
+            loadChart();
+        }
+
+        public void loadChart()
+        {
+            query = "select count(mname) from medicine where eDate >= convert(varchar(100),getdate(),106)";
+            ds = fn.getData(query);
+            count = Int64.Parse(ds.Tables[0].Rows[0][0].ToString());
+            this.chart1.Series["Valid Medicines"].Points.AddXY("Medicine Validity Count", count);
+
+            query = "select count(mname) from medicine where eDate <= convert(varchar(100),getdate(),106)";
+            ds = fn.getData(query);
+            count = Int64.Parse(ds.Tables[0].Rows[0][0].ToString());
+            this.chart1.Series["Expired Medicines"].Points.AddXY("Medicine Validity Count", count);
+        }
+
+        private void btnReload_Click(object sender, EventArgs e)
+        {
+            chart1.Series["Valid Medicines"].Points.Clear();
+            chart1.Series["Expired Medicines"].Points.Clear();
+            loadChart();
         }
     }
 }

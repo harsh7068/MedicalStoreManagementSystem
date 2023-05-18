@@ -33,16 +33,18 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.uC_P_Dashboard1 = new Medical_Store_Management_System.PharmacistUC.UC_P_Dashboard();
             this.btnLogout = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAddMedicine = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.uC_P_Dashboard1 = new Medical_Store_Management_System.PharmacistUC.UC_P_Dashboard();
+            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.uC_P_AddMedicine1 = new Medical_Store_Management_System.PharmacistUC.UC_P_AddMedicine();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -56,7 +58,7 @@
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnAddMedicine);
             this.panel1.Controls.Add(this.btnDashboard);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -86,11 +88,24 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.uC_P_AddMedicine1);
             this.panel3.Controls.Add(this.uC_P_Dashboard1);
             this.panel3.Location = new System.Drawing.Point(275, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1094, 780);
             this.panel3.TabIndex = 2;
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.TargetControl = this.panel3;
+            // 
+            // uC_P_Dashboard1
+            // 
+            this.uC_P_Dashboard1.BackColor = System.Drawing.Color.White;
+            this.uC_P_Dashboard1.Location = new System.Drawing.Point(-1, 2);
+            this.uC_P_Dashboard1.Name = "uC_P_Dashboard1";
+            this.uC_P_Dashboard1.Size = new System.Drawing.Size(1094, 780);
+            this.uC_P_Dashboard1.TabIndex = 0;
             // 
             // btnLogout
             // 
@@ -173,21 +188,22 @@
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnAddMedicine
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::Medical_Store_Management_System.Properties.Resources.addMedic_48px;
-            this.button1.Location = new System.Drawing.Point(40, 353);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(194, 47);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Add Medicine";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnAddMedicine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnAddMedicine.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddMedicine.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnAddMedicine.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddMedicine.ForeColor = System.Drawing.Color.White;
+            this.btnAddMedicine.Image = global::Medical_Store_Management_System.Properties.Resources.addMedic_48px;
+            this.btnAddMedicine.Location = new System.Drawing.Point(40, 353);
+            this.btnAddMedicine.Name = "btnAddMedicine";
+            this.btnAddMedicine.Size = new System.Drawing.Size(194, 47);
+            this.btnAddMedicine.TabIndex = 6;
+            this.btnAddMedicine.Text = "Add Medicine";
+            this.btnAddMedicine.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAddMedicine.UseVisualStyleBackColor = false;
+            this.btnAddMedicine.Click += new System.EventHandler(this.btnAddMedicine_Click);
             // 
             // btnDashboard
             // 
@@ -216,17 +232,17 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // guna2Elipse1
+            // guna2Elipse2
             // 
-            this.guna2Elipse1.TargetControl = this.panel3;
+            this.guna2Elipse2.TargetControl = this.panel3;
             // 
-            // uC_P_Dashboard1
+            // uC_P_AddMedicine1
             // 
-            this.uC_P_Dashboard1.BackColor = System.Drawing.Color.White;
-            this.uC_P_Dashboard1.Location = new System.Drawing.Point(-1, 2);
-            this.uC_P_Dashboard1.Name = "uC_P_Dashboard1";
-            this.uC_P_Dashboard1.Size = new System.Drawing.Size(1094, 780);
-            this.uC_P_Dashboard1.TabIndex = 0;
+            this.uC_P_AddMedicine1.BackColor = System.Drawing.Color.White;
+            this.uC_P_AddMedicine1.Location = new System.Drawing.Point(0, 1);
+            this.uC_P_AddMedicine1.Name = "uC_P_AddMedicine1";
+            this.uC_P_AddMedicine1.Size = new System.Drawing.Size(1094, 780);
+            this.uC_P_AddMedicine1.TabIndex = 1;
             // 
             // Pharmacist
             // 
@@ -257,7 +273,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAddMedicine;
         private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -265,5 +281,7 @@
         private System.Windows.Forms.Panel panel3;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private PharmacistUC.UC_P_Dashboard uC_P_Dashboard1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
+        private PharmacistUC.UC_P_AddMedicine uC_P_AddMedicine1;
     }
 }
