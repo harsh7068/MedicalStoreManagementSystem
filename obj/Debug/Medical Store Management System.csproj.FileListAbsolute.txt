@@ -30,3 +30,5 @@ C:\Users\HERO\Source\Repos\MedicalStoreManagementSystem\obj\Debug\Medical Store 
 C:\Users\HERO\Source\Repos\MedicalStoreManagementSystem\obj\Debug\Medical_Store_Management_System.AdministratorUC.UC_AddUser.resources
 C:\Users\HERO\Source\Repos\MedicalStoreManagementSystem\obj\Debug\Medical_Store_Management_System.AdministratorUC.UC_ViewUser.resources
 C:\Users\HERO\Source\Repos\MedicalStoreManagementSystem\obj\Debug\Medical_Store_Management_System.AdministratorUC.UC_Profile.resources
+C:\Users\HERO\Source\Repos\MedicalStoreManagementSystem\obj\Debug\Medical_Store_Management_System.Pharmacist.resources
+C:\Users\HERO\Source\Repos\MedicalStoreManagementSystem\obj\Debug\Medical_Store_Management_System.PharmacistUC.UC_P_Dashboard.resources

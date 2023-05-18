@@ -213,6 +213,16 @@ namespace Medical_Store_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dashboard1 {
+            get {
+                object obj = ResourceManager.GetObject("dashboard1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dashbord {
             get {
                 object obj = ResourceManager.GetObject("dashbord", resourceCulture);
@@ -266,6 +276,16 @@ namespace Medical_Store_Management_System.Properties {
         internal static System.Drawing.Bitmap pharmacy_100px {
             get {
                 object obj = ResourceManager.GetObject("pharmacy_100px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pharmacy_100px1 {
+            get {
+                object obj = ResourceManager.GetObject("pharmacy_100px1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

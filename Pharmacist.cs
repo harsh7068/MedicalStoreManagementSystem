@@ -16,5 +16,24 @@ namespace Medical_Store_Management_System
         {
             InitializeComponent();
         }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            Form1 fm = new Form1();
+            fm.Show();
+            this.Hide();
+        }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            uC_P_Dashboard1.Visible = true;
+            uC_P_Dashboard1.BringToFront();
+        }
+
+        private void Pharmacist_Load(object sender, EventArgs e)
+        {
+            uC_P_Dashboard1.Visible = false;
+            btnDashboard.PerformClick();
+        }
     }
 }
