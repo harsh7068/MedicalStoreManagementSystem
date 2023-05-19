@@ -37,6 +37,9 @@ namespace Medical_Store_Management_System
             btnDashboard.PerformClick();
             uC_P_AddMedicine1.Visible = false;
             uC_P_ViewMedicine1.Visible = false;
+            uC_P_ModifyMedicine1.Visible = false;
+            uC_P_MedValidityCheck1.Visible = false;
+            uC_P_SellMedicines1.Visible = false;
         }
 
         private void btnAddMedicine_Click(object sender, EventArgs e)
@@ -49,6 +52,24 @@ namespace Medical_Store_Management_System
         {
             uC_P_ViewMedicine1.Visible = true;
             uC_P_ViewMedicine1.BringToFront();
+        }
+
+        private void btnModifyMedicine_Click(object sender, EventArgs e)
+        {
+            uC_P_ModifyMedicine1.Visible = true;
+            uC_P_ModifyMedicine1.BringToFront();
+        }
+
+        private void btnMedValCheck_Click(object sender, EventArgs e)
+        {
+            uC_P_MedValidityCheck1.Visible = true;
+            uC_P_MedValidityCheck1.BringToFront();
+        }
+
+        private void btnSellMedicine_Click(object sender, EventArgs e)
+        {
+            uC_P_SellMedicines1.Visible = true;
+            uC_P_SellMedicines1.BringToFront();
         }
     }
 }
